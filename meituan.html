@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimun-scale=1, maximum-scale=1">
+		<title></title>
+		
+	</head>
+	   <link rel="stylesheet" href="css/bootstrap.css" />
+       <link rel="stylesheet" href="css/meituan.css" />
+       <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+	   <!--<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	   <script type="text/javascript" src="js/meituan.js" ></script>
+	   <script type="text/javascript" src="js/bootstrap.js" ></script>-->
+	   <script type="text/javascript" src="js/main.min.js" ></script>
+	   <script type="text/javascript" src="js/angular.min.js" ></script>
+	<body ng-app="myApp">
+	 <div ng-controller="mtController">
+	 	 <!--头部公共部分文件独立引入-->
+        <div ng-include="htm"></div>
+          
+         <section>
+         	<div class="swiper-container" >
+         	   <div class="tips swiper-wrapper">
+         		
+         		 <ul class="tips_ul swiper-slide">
+         			<li><a href="#">
+         				<span class='li01'>&#xe60a;</span><br />
+         				<i>美食</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li02'>&#xe609;</span><br />
+         				<i>电影</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li03'>&#xe601;</span><br />
+         				<i>酒店</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li04'>&#xe605;</span><br />
+         				<i>休闲娱乐</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li05'>&#xe613;</span><br />
+         				<i>外卖</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li06'>&#xe604;</span><br />
+         				<i>美发</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li07'>&#xe607;</span><br />
+         				<i>足疗按摩</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li08'>&#xe610;</span><br />
+         				<i>桌游/电玩</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li09'>&#xe612;</span><br />
+         				<i>美甲每瞳</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li10'>&#xe60e;</span><br />
+         				<i>洗浴汗蒸</i>
+         				</a>
+         			</li>
+         				</ul>
+         		  <ul class="tips_ul swiper-slide">
+         			<li><a href="#">
+         				<span class='li11'>&#xe614;</span><br />
+         				<i>周边游</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li12'>&#xe600;</span><br />
+         				<i>机票/火车票</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li13'>&#xe60c;</span><br />
+         				<i>景点</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li14'>&#xe60b;</span><br />
+         				<i>KTV</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li15'>&#xe603;</span><br />
+         				<i>丽人</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li16'>&#xe608;</span><br />
+         				<i>生活服务</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li17'>&#xe60d;</span><br />
+         				<i>密室逃脱</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li18'>&#xe60f;</span><br />
+         				<i>运动健身</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li19'>&#xe611;</span><br />
+         				<i>主题公园</i>
+         				</a>
+         			</li>
+         			<li><a href="#">
+         				<span class='li20'>&#xe602;</span><br />
+         				<i>全部分类</i>
+         				</a>
+         			</li>
+         		</ul>
+         		        		
+         	   </div>
+         	   <div class="swiper-pagination"></div>
+         	</div>
+         	
+         	<div class="navlist">
+		       <div class="navlist_01">
+		       	    <h5><a href="#">我们约吧</a></h5>
+		       	    <p><a>恋人家人好朋友</a></p>
+		       	    <img src="img/nav (1).png" />
+		       </div>
+		       <div class="navright">
+		       	      <div class="navlist_02">
+		       	    <div>
+		       	    	 <h5><a href="#">低价超值</a></h5>
+		       	    <p><a>十元惠生活</a></p>
+		       	    </div>
+		       	    <img class="navlist-img" src="img/nav (1).jpg" />
+		       	  
+		       </div>
+		       <div class="navlist_03">
+		            <h5><a href="#">午后时光</a></h5>
+		       	    <p><a>懒懒下午茶</a></p>
+		       	    <img class="navlist-img" src="img/nav (2).png" />
+		     
+		     
+		       </div>
+		       <div class="navlist_04">
+		       	    <h5><a href="#">名店抢购</a></h5>
+		       	    <p><a>距离结束</a></p>
+		       	    <div class="finishTime">
+		       	    <!--<span>24</span>:<span>00</span>:<span>00</span>-->
+		       	    				       	    	
+		       	    </div>
+		       	
+		       </div>
+		       
+		       </div>
+		    
+         		
+         	</div>
+         	
+         	<div class="main">
+         		<h4>猜你喜欢</h4>
+         		<div class="main_ul swiper-scrollbar"  >
+         				
+         		
+
+         		
+         		</div>
+         	
+         		
+         		
+         	</div>
+        
+         </section> 
+         <!--尾部公共部分文件独立引入-->
+        <div ng-include="foo"></div>     
+     </div>      
+         
+		<!--<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js" ></script>-->
+		<script>  
+		
+		var flag=true;
+		function myTime(year,month,day){
+			var now=new Date();
+			var endDate=new Date(year,month-1,day);
+			var leftTime=endDate.getTime()-now.getTime();
+			var leftsecond=parseInt(leftTime/1000);		
+			var day1=Math.floor(leftsecond/(60*60*24)); 
+			var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+			var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+			var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
+		
+		
+			if(leftTime<=0){
+			var txt="距离双11已结束："+0+"天"+0+"小时"+0+"分"+0+"秒";
+			$('.finishTime').text(txt)
+				return  flag=false;
+			}else{
+					var txt="距离双11还有："+day1+"天"+hour+"小时"+minute+"分"+second+"秒";
+			$('.finishTime').text(txt)
+			}
+			
+		}
+		var timer=null;
+ timer=setInterval(function(){myTime(2016,11,11); if(!flag){clearInterval(timer)}}, 1000);
+		
+  var mySwiper = new Swiper ('.swiper-container', {
+//  direction: 'vertical',
+//  loop: true,
+    
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    
+    // 如果需要前进后退按钮
+//  nextButton: '.swiper-button-next',
+//  prevButton: '.swiper-button-prev',
+//  
+//  // 如果需要滚动条
+//  scrollbar: '.swiper-scrollbar',
+
+   
+
+  })   
+  
+  var app = angular.module('myApp',[])
+  app.controller('mtController',function($scope){
+  	$scope.htm='header.html'
+  	$scope.foo='footer.html'
+  	
+  })
+  
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  </script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
